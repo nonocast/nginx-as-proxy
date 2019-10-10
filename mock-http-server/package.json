@@ -1,0 +1,30 @@
+{
+  "name": "mock-http-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env DEBUG=app* nodemon --exec babel-node src/index",
+    "build": "webpack --mode production --progress --display-modules --colors --display-reasons"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "config": "^3.2.3",
+    "cross-env": "^6.0.3",
+    "debug": "^4.1.1",
+    "koa": "^2.8.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "core-js": "3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
